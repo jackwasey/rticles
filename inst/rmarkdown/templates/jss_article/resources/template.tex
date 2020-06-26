@@ -9,7 +9,7 @@ $endfor$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\author{
+\author{%
 $for(author)$$author.name$\\$author.affiliation$$sep$ \And $endfor$
 }
 \title{$title.formatted$}
@@ -22,7 +22,7 @@ $if(title.short)$
 \Shorttitle{$title.short$}
 $endif$
 
-\Abstract{
+\Abstract{%
 $abstract$
 }
 
@@ -41,7 +41,7 @@ $endif$
 %% \Submitdate{$submitdate$}
 %% \Acceptdate{2012-06-04}
 
-\Address{
+\Address{%
 $for(author)$
   $if(author.address)$
   $author.name$\\
